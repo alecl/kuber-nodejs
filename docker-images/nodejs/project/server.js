@@ -10,7 +10,7 @@ function handleRequest(request, response){
   });
 
     var name   = process.env.NAME;
-    response.write('new server:  '+ name + ', path = ' + request.url + '\n');
+    response.write('BRAND new server:  '+ name + ', path = ' + request.url + '\n');
     response.write('body' + JSON.stringify(request.headers));
     response.end();
 }
